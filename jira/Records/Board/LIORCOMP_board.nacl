@@ -1,0 +1,75 @@
+jira.Board LIORCOMP_board@s {
+  id = 6
+  self = "https://ori-salto-test.atlassian.net/rest/agile/1.0/board/6"
+  name = "LIORCOMP board"
+  type = "scrum"
+  admins = {
+    users = [
+      {
+        self = "https://ori-salto-test.atlassian.net/rest/api/2/user?accountId=60e8b78784c9920071996842"
+        displayName = "Lior Neudorfer"
+        active = true
+        accountId = "60e8b78784c9920071996842"
+        avatarUrls = {
+          "16x16" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+          "24x24" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+          "32x32" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+          "48x48" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+        }
+      },
+    ]
+  }
+  location = {
+    projectId = 10007
+    displayName = "LiorCompanyManaged (LIORCOMP)"
+    projectName = "LiorCompanyManaged"
+    projectKey = "LIORCOMP"
+    projectTypeKey = "software"
+    avatarURI = "/secure/projectavatar?size=small&s=small&pid=10007&avatarId=10413"
+    name = "LiorCompanyManaged (LIORCOMP)"
+  }
+  canEdit = true
+  config = [
+    {
+      id = 6
+      name = "LIORCOMP board"
+      type = "scrum"
+      self = "https://ori-salto-test.atlassian.net/rest/agile/1.0/board/6/configuration"
+      location = jira.Project.instance.LiorCompanyManaged
+      filter = jira.FilterDetails.instance.Filter_for_LIORCOMP_board@s
+      columnConfig = {
+        columns = [
+          {
+            name = "To Do"
+            statuses = [
+              jira.StatusDetails.instance.To_Do@s,
+            ]
+          },
+          {
+            name = "In Progress"
+            statuses = [
+              jira.StatusDetails.instance.In_Progress@s,
+            ]
+          },
+          {
+            name = "Done"
+            statuses = [
+              jira.StatusDetails.instance.DONE,
+            ]
+          },
+        ]
+        constraintType = "none"
+      }
+      estimation = {
+        type = "field"
+        field = {
+          fieldId = "customfield_10028"
+          displayName = "Story Points"
+        }
+      }
+      ranking = {
+        rankCustomFieldId = 10019
+      }
+    },
+  ]
+}

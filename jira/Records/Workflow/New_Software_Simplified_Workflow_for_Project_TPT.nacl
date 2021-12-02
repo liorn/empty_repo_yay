@@ -1,0 +1,227 @@
+jira.Workflow New_Software_Simplified_Workflow_for_Project_TPT@s {
+  id = {
+    name = "New Software Simplified Workflow for Project TPT"
+    entityId = "e4a1b979-d91b-406b-bbec-abff8fddf5d9"
+  }
+  description = "Workflow for TPT"
+  transitions = [
+    {
+      id = "1"
+      name = "Create"
+      description = ""
+      to = "10008"
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "IssueCreateFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "1"
+                name = "issue_created"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "11"
+      name = "To Do"
+      description = ""
+      to = "10008"
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = "resolution"
+              fieldValue = ""
+            }
+          },
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "21"
+      name = "In Progress"
+      description = ""
+      to = "3"
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = "resolution"
+              fieldValue = ""
+            }
+          },
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "31"
+      name = "Done"
+      description = ""
+      to = "10005"
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = "resolution"
+              fieldValue = "10000"
+            }
+          },
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "41"
+      name = "Start work"
+      description = ""
+      from = [
+        "10008",
+      ]
+      to = "3"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+  ]
+  statuses = [
+    {
+      id = "10005"
+      name = "Done"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10008"
+      name = "To Do"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "3"
+      name = "In Progress"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+  ]
+}

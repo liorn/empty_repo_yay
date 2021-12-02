@@ -1,0 +1,5 @@
+jira.IssueTypeScheme JAM__Kanban_Issue_Type_Scheme@fssss {
+  id = "10144"
+  name = "JAM: Kanban Issue Type Scheme"
+  defaultIssueTypeId = "10007"
+}

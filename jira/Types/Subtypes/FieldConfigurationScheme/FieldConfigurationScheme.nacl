@@ -1,0 +1,8 @@
+type jira.FieldConfigurationScheme {
+  string id {
+  }
+  string name {
+  }
+  string description {
+  }
+}

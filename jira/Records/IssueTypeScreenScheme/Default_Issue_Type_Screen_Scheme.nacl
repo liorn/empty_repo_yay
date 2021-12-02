@@ -1,0 +1,5 @@
+jira.IssueTypeScreenScheme Default_Issue_Type_Screen_Scheme@s {
+  id = "1"
+  name = "Default Issue Type Screen Scheme"
+  description = "The default issue type screen scheme"
+}

@@ -1,0 +1,4 @@
+jira.IssueTypeSchemeMapping unnamed_1 {
+  issueTypeSchemeId = "10000"
+  issueTypeId = "10005"
+}

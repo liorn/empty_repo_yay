@@ -1,0 +1,11 @@
+jira.StatusDetails Build_Broken@s {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/401"
+  description = "The source code committed for this issue has possibly broken the build."
+  iconUrl = "https://ori-salto-test.atlassian.net/images/icons/bamboo-fail.png"
+  name = "Build Broken"
+  id = "401"
+  statusCategory = jira.StatusCategory.instance.In_Progress@s
+  additionalProperties = {
+    untranslatedName = "Build Broken"
+  }
+}

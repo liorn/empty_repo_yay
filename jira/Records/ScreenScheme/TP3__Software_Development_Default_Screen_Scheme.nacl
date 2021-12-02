@@ -1,0 +1,8 @@
+jira.ScreenScheme TP3__Software_Development_Default_Screen_Scheme@fsssss {
+  id = 10005
+  name = "TP3: Software Development Default Screen Scheme"
+  description = ""
+  screens = {
+    default = 10010
+  }
+}

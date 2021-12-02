@@ -1,0 +1,8 @@
+jira.ScreenScheme LIORCOMP__Scrum_Bug_Screen_Scheme@fssss {
+  id = 10022
+  name = "LIORCOMP: Scrum Bug Screen Scheme"
+  description = ""
+  screens = {
+    default = 10027
+  }
+}

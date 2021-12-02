@@ -1,0 +1,5 @@
+jira.IssueTypeScreenScheme LIORCOMP__Scrum_Issue_Type_Screen_Scheme@fsssss {
+  id = "10007"
+  name = "LIORCOMP: Scrum Issue Type Screen Scheme"
+  description = ""
+}

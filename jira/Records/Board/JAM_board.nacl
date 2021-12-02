@@ -1,0 +1,80 @@
+jira.Board JAM_board@s {
+  id = 4
+  self = "https://ori-salto-test.atlassian.net/rest/agile/1.0/board/4"
+  name = "JAM board"
+  type = "kanban"
+  admins = {
+    users = [
+      {
+        self = "https://ori-salto-test.atlassian.net/rest/api/2/user?accountId=5e5e289fc8ec310c955d2d15"
+        displayName = "Hadas Birin"
+        active = true
+        accountId = "5e5e289fc8ec310c955d2d15"
+        avatarUrls = {
+          "16x16" = "https://secure.gravatar.com/avatar/f425cc752fb470820ce67ebc54e863fb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FHB-1.png"
+          "24x24" = "https://secure.gravatar.com/avatar/f425cc752fb470820ce67ebc54e863fb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FHB-1.png"
+          "32x32" = "https://secure.gravatar.com/avatar/f425cc752fb470820ce67ebc54e863fb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FHB-1.png"
+          "48x48" = "https://secure.gravatar.com/avatar/f425cc752fb470820ce67ebc54e863fb?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FHB-1.png"
+        }
+      },
+    ]
+  }
+  location = {
+    projectId = 10005
+    displayName = "Jira management (JAM)"
+    projectName = "Jira management"
+    projectKey = "JAM"
+    projectTypeKey = "software"
+    avatarURI = "/secure/projectavatar?size=small&s=small&pid=10005&avatarId=10423"
+    name = "Jira management (JAM)"
+  }
+  canEdit = true
+  config = [
+    {
+      id = 4
+      name = "JAM board"
+      type = "kanban"
+      self = "https://ori-salto-test.atlassian.net/rest/agile/1.0/board/4/configuration"
+      location = jira.Project.instance.Jira_management@s
+      filter = jira.FilterDetails.instance.Filter_for_JAM_board@s
+      subQuery = {
+        query = "fixVersion in unreleasedVersions() OR fixVersion is EMPTY"
+      }
+      columnConfig = {
+        columns = [
+          {
+            name = "Backlog"
+          },
+          {
+            name = "Backlog"
+            statuses = [
+              jira.StatusDetails.instance.Backlog,
+            ]
+          },
+          {
+            name = "Selected for Development"
+            statuses = [
+              jira.StatusDetails.instance.Selected_for_Development@s,
+            ]
+          },
+          {
+            name = "In Progress"
+            statuses = [
+              jira.StatusDetails.instance.In_Progress@s,
+            ]
+          },
+          {
+            name = "Done"
+            statuses = [
+              jira.StatusDetails.instance.DONE,
+            ]
+          },
+        ]
+        constraintType = "issueCount"
+      }
+      ranking = {
+        rankCustomFieldId = 10019
+      }
+    },
+  ]
+}

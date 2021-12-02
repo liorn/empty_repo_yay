@@ -1,0 +1,123 @@
+jira.Project test_proj_two@b {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/project/10002"
+  id = "10002"
+  key = "TPT"
+  description = ""
+  lead = {
+    self = "https://ori-salto-test.atlassian.net/rest/api/3/user?accountId=5cd027a783de300fe5d4b9b0"
+    accountId = "5cd027a783de300fe5d4b9b0"
+    accountType = "atlassian"
+    avatarUrls = {
+      "48x48" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "24x24" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "16x16" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "32x32" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+    }
+    displayName = "Ori Moisis"
+    active = true
+  }
+  issueTypes = [
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10005"
+      id = "10005"
+      description = "A small, distinct piece of work."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype"
+      name = "Task"
+      subtask = false
+      avatarId = 10318
+      hierarchyLevel = 0
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10006"
+      id = "10006"
+      description = "A small piece of work that's part of a larger task."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype"
+      name = "Sub-task"
+      subtask = true
+      avatarId = 10316
+      hierarchyLevel = -1
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10007"
+      id = "10007"
+      description = "Functionality or a feature expressed as a user goal."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10315&avatarType=issuetype"
+      name = "Story"
+      subtask = false
+      avatarId = 10315
+      hierarchyLevel = 0
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10008"
+      id = "10008"
+      description = "A problem or error."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype"
+      name = "Bug"
+      subtask = false
+      avatarId = 10303
+      hierarchyLevel = 0
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10000"
+      id = "10000"
+      description = "A big user story that needs to be broken down. Created by Jira Software - do not edit or delete."
+      iconUrl = "https://ori-salto-test.atlassian.net/images/icons/issuetypes/epic.svg"
+      name = "Epic"
+      subtask = false
+      hierarchyLevel = 1
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10009"
+      id = "10009"
+      description = "custom issue type for project two"
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10300&avatarType=issuetype"
+      name = "Custom issue type two"
+      subtask = false
+      avatarId = 10300
+      hierarchyLevel = 0
+    },
+  ]
+  name = "test-proj-two"
+  avatarUrls = {
+    "48x48" = "https://ori-salto-test.atlassian.net/secure/projectavatar?pid=10002&avatarId=10415"
+    "24x24" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=small&s=small&pid=10002&avatarId=10415"
+    "16x16" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10002&avatarId=10415"
+    "32x32" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10002&avatarId=10415"
+  }
+  projectTypeKey = "software"
+  simplified = false
+  style = "classic"
+  isPrivate = false
+  permissions = {
+    canEdit = true
+  }
+  components = [
+    {
+      realAssigneeType = "PROJECT_DEFAULT"
+      isAssigneeTypeValid = false
+      description = "The first test component"
+      name = "TPT-Comp1"
+      id = "10003"
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/component/10003"
+      projectId = 10002
+      project = "TPT"
+      assigneeType = "PROJECT_DEFAULT"
+    },
+    {
+      realAssigneeType = "UNASSIGNED"
+      isAssigneeTypeValid = true
+      description = "The second test component"
+      name = "TPT-Comp2"
+      id = "10004"
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/component/10004"
+      projectId = 10002
+      project = "TPT"
+      assigneeType = "UNASSIGNED"
+    },
+  ]
+  additionalProperties = {
+    projectKeys = [
+      "TPT",
+    ]
+  }
+}

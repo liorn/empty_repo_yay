@@ -1,0 +1,6 @@
+jira.Resolution Duplicate {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/resolution/10002"
+  id = "10002"
+  description = "The problem is a duplicate of an existing issue."
+  name = "Duplicate"
+}

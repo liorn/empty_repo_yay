@@ -1,0 +1,248 @@
+jira.Workflow Lior_s_Test_Workflow@tss {
+  id = {
+    name = "Lior's Test Workflow"
+    entityId = "a006be9e-c7ec-478b-8b6e-d51d385a4e92"
+  }
+  description = ""
+  transitions = [
+    {
+      id = "1"
+      name = "Create"
+      description = ""
+      to = "1"
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "IssueCreateFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "1"
+                name = "issue_created"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "11"
+      name = "Build Broken"
+      description = ""
+      to = "401"
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "21"
+      name = "LiorTestTransition"
+      description = ""
+      from = [
+        "1",
+      ]
+      to = "401"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+        validators = [
+          {
+            type = "FieldRequiredValidator"
+            configuration = {
+              ignoreContext = false
+              errorMessage = ""
+              fields = [
+                "customfield_10006",
+              ]
+            }
+          },
+          {
+            type = "com.onresolve.jira.groovy.groovyrunner__script-workflow-validators"
+            configuration = {
+              value = "{\"uuid\":\"bd1aaa25-00ad-49b5-9423-b03e425d8df4\",\"enabled\":true,\"description\":\"Lior Test ScriptRunner Validator \",\"expression\":\"!config['enabled'] ? true : (true)\",\"errorMessage\":\"A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information.\"}"
+              id = "a9aea747-8cbf-4796-93dd-c58ddd32458d"
+            }
+          },
+          {
+            type = "com.onresolve.jira.groovy.groovyrunner__script-workflow-validators"
+            configuration = {
+              value = "{\"uuid\":\"8e4ba219-4715-495a-b854-203ba8ca2af5\",\"enabled\":true,\"description\":\"Another ScriptRunner validator\",\"expression\":\"!config['enabled'] ? true : (issue.getResolution() == \\\"Fixed\\\")\",\"errorMessage\":\"A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information.\"}"
+              id = "b3a1350c-4b2a-4500-b725-08b30179dfad"
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "31"
+      name = "AnotherTestTransition"
+      description = ""
+      from = [
+        "10004",
+      ]
+      to = "10004"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "41"
+      name = "TransitionToSharedStatus"
+      description = ""
+      from = [
+        "10018",
+      ]
+      to = "401"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+  ]
+  statuses = [
+    {
+      id = "1"
+      name = "Open"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10004"
+      name = "Approved"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10018"
+      name = "A shared status"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "401"
+      name = "Build Broken"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+  ]
+}

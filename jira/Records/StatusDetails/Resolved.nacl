@@ -1,0 +1,11 @@
+jira.StatusDetails Resolved {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/5"
+  description = "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed."
+  iconUrl = "https://ori-salto-test.atlassian.net/images/icons/statuses/resolved.png"
+  name = "Resolved"
+  id = "5"
+  statusCategory = jira.StatusCategory.instance.Done
+  additionalProperties = {
+    untranslatedName = "Resolved"
+  }
+}

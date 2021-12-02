@@ -1,0 +1,8 @@
+jira.ScreenScheme TPT__Scrum_Default_Screen_Scheme@fssss {
+  id = 10003
+  name = "TPT: Scrum Default Screen Scheme"
+  description = ""
+  screens = {
+    default = 10008
+  }
+}

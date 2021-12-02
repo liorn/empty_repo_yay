@@ -1,0 +1,8 @@
+jira.ScreenScheme JIRA__Kanban_Bug_Screen_Scheme@fssss {
+  id = 10012
+  name = "JIRA: Kanban Bug Screen Scheme"
+  description = ""
+  screens = {
+    default = 10017
+  }
+}

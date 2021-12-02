@@ -1,0 +1,80 @@
+jira.Board AS_board@s {
+  id = 7
+  self = "https://ori-salto-test.atlassian.net/rest/agile/1.0/board/7"
+  name = "AS board"
+  type = "simple"
+  admins = {
+    users = [
+      {
+        self = "https://ori-salto-test.atlassian.net/rest/api/2/user?accountId=5fa91999b2633d0076583a61"
+        displayName = "Alon Stern"
+        active = true
+        accountId = "5fa91999b2633d0076583a61"
+        avatarUrls = {
+          "48x48" = "https://secure.gravatar.com/avatar/90ccd84f150f4fab9ea92e7e7a0ea06e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+          "16x16" = "https://secure.gravatar.com/avatar/90ccd84f150f4fab9ea92e7e7a0ea06e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+          "24x24" = "https://secure.gravatar.com/avatar/90ccd84f150f4fab9ea92e7e7a0ea06e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+          "32x32" = "https://secure.gravatar.com/avatar/90ccd84f150f4fab9ea92e7e7a0ea06e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+        }
+      },
+    ]
+  }
+  location = {
+    projectId = 10008
+    displayName = "AlonProject (AS)"
+    projectName = "AlonProject"
+    projectKey = "AS"
+    projectTypeKey = "software"
+    avatarURI = "/secure/projectavatar?size=small&s=small&pid=10008&avatarId=10401"
+    name = "AlonProject (AS)"
+  }
+  canEdit = true
+  config = [
+    {
+      id = 7
+      name = "AS board"
+      type = "simple"
+      self = "https://ori-salto-test.atlassian.net/rest/agile/1.0/board/7/configuration"
+      location = jira.Project.instance.AlonProject
+      filter = {
+        id = "10009"
+        self = "https://ori-salto-test.atlassian.net/rest/api/2/filter/10009"
+      }
+      columnConfig = {
+        columns = [
+          {
+            name = "To Do"
+            statuses = [
+              {
+                id = "10015"
+                self = "https://ori-salto-test.atlassian.net/rest/api/2/status/10015"
+              },
+            ]
+          },
+          {
+            name = "In Progress"
+            statuses = [
+              {
+                id = "10016"
+                self = "https://ori-salto-test.atlassian.net/rest/api/2/status/10016"
+              },
+            ]
+          },
+          {
+            name = "Done"
+            statuses = [
+              {
+                id = "10017"
+                self = "https://ori-salto-test.atlassian.net/rest/api/2/status/10017"
+              },
+            ]
+          },
+        ]
+        constraintType = "none"
+      }
+      ranking = {
+        rankCustomFieldId = 10019
+      }
+    },
+  ]
+}

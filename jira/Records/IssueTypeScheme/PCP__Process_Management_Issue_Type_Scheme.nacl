@@ -1,0 +1,5 @@
+jira.IssueTypeScheme PCP__Process_Management_Issue_Type_Scheme@fsssss {
+  id = "10129"
+  name = "PCP: Process Management Issue Type Scheme"
+  defaultIssueTypeId = "10005"
+}

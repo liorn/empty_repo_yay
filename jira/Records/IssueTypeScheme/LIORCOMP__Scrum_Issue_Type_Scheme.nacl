@@ -1,0 +1,5 @@
+jira.IssueTypeScheme LIORCOMP__Scrum_Issue_Type_Scheme@fssss {
+  id = "10146"
+  name = "LIORCOMP: Scrum Issue Type Scheme"
+  defaultIssueTypeId = "10007"
+}

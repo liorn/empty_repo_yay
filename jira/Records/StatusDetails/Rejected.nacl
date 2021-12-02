@@ -1,0 +1,11 @@
+jira.StatusDetails Rejected {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/10007"
+  description = ""
+  iconUrl = "https://ori-salto-test.atlassian.net/images/icons/status_generic.gif"
+  name = "Rejected"
+  id = "10007"
+  statusCategory = jira.StatusCategory.instance.Done
+  additionalProperties = {
+    untranslatedName = "Rejected"
+  }
+}

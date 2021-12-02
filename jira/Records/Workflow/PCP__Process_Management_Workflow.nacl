@@ -1,0 +1,444 @@
+jira.Workflow PCP__Process_Management_Workflow@fsss {
+  id = {
+    name = "PCP: Process Management Workflow"
+    entityId = "2ba9afc3-f999-476f-9ad0-58e0f60c618d"
+  }
+  description = "process-management-workflow"
+  transitions = [
+    {
+      id = "1"
+      name = "Create"
+      description = ""
+      to = "1"
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "IssueCreateFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "1"
+                name = "issue_created"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "11"
+      name = "Start Progress"
+      description = ""
+      from = [
+        "1",
+      ]
+      to = "3"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "111"
+      name = "Stop progress"
+      description = ""
+      from = [
+        "3",
+      ]
+      to = "10006"
+      type = "directed"
+      screen = {
+        id = "10001"
+        name = "PROC0356: Simple Issue Tracking Resolve Issue Screen"
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "121"
+      name = "Reopen"
+      description = ""
+      from = [
+        "10006",
+      ]
+      to = "1"
+      type = "directed"
+      rules = {
+        conditions = [
+          {
+            type = "PermissionCondition"
+            configuration = {
+              permissionKey = "RESOLVE_ISSUES"
+            }
+          },
+        ]
+        conditionsTree = {
+          nodeType = "simple"
+          type = "PermissionCondition"
+          configuration = {
+            permissionKey = "RESOLVE_ISSUES"
+          }
+        }
+        postFunctions = [
+          {
+            type = "UpdateIssueFieldFunction"
+            configuration = {
+              fieldId = "resolution"
+              fieldValue = ""
+            }
+          },
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "131"
+      name = "Reject"
+      description = ""
+      from = [
+        "10003",
+      ]
+      to = "10007"
+      type = "directed"
+      screen = {
+        id = "10002"
+        name = "PROC0356: Simple Issue Tracking Comment Screen"
+      }
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "141"
+      name = "Start progress"
+      description = ""
+      from = [
+        "10007",
+      ]
+      to = "3"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "21"
+      name = "Ready for review"
+      description = ""
+      from = [
+        "3",
+      ]
+      to = "10003"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "31"
+      name = "Approve"
+      description = ""
+      from = [
+        "10003",
+      ]
+      to = "10004"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "41"
+      name = "Done"
+      description = ""
+      from = [
+        "10004",
+      ]
+      to = "10005"
+      type = "directed"
+      screen = {
+        id = "10001"
+        name = "PROC0356: Simple Issue Tracking Resolve Issue Screen"
+      }
+      rules = {
+        conditions = [
+          {
+            type = "PermissionCondition"
+            configuration = {
+              permissionKey = "RESOLVE_ISSUES"
+            }
+          },
+        ]
+        conditionsTree = {
+          nodeType = "simple"
+          type = "PermissionCondition"
+          configuration = {
+            permissionKey = "RESOLVE_ISSUES"
+          }
+        }
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+  ]
+  statuses = [
+    {
+      id = "1"
+      name = "Open"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10003"
+      name = "Under Review"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10004"
+      name = "Approved"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10005"
+      name = "DONE"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10006"
+      name = "Cancelled"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10007"
+      name = "Rejected"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "3"
+      name = "In Progress"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+  ]
+}

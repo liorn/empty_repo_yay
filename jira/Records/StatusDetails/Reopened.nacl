@@ -1,0 +1,11 @@
+jira.StatusDetails Reopened {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/4"
+  description = "This issue was once resolved, but the resolution was deemed incorrect. From here issues are either marked assigned or resolved."
+  iconUrl = "https://ori-salto-test.atlassian.net/images/icons/statuses/reopened.png"
+  name = "Reopened"
+  id = "4"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  additionalProperties = {
+    untranslatedName = "Reopened"
+  }
+}

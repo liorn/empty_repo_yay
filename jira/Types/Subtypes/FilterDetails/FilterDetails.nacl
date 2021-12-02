@@ -1,0 +1,32 @@
+type jira.FilterDetails {
+  string self {
+  }
+  string id {
+  }
+  string name {
+  }
+  string description {
+  }
+  jira.User owner {
+  }
+  string jql {
+  }
+  string viewUrl {
+  }
+  string searchUrl {
+  }
+  boolean favourite {
+  }
+  number favouritedCount {
+  }
+  "List<jira.SharePermission>" sharePermissions {
+  }
+  "List<jira.FilterSubscription>" subscriptions {
+  }
+  "List<jira.ColumnItem>" columns {
+  }
+  string expand {
+  }
+  "List<jira.SharePermission>" editPermissions {
+  }
+}

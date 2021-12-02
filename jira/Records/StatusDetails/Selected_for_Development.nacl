@@ -1,0 +1,11 @@
+jira.StatusDetails Selected_for_Development@s {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/10011"
+  description = ""
+  iconUrl = "https://ori-salto-test.atlassian.net/"
+  name = "Selected for Development"
+  id = "10011"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  additionalProperties = {
+    untranslatedName = "Selected for Development"
+  }
+}

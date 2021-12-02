@@ -1,0 +1,8 @@
+jira.ScreenScheme New_screen_schema@s {
+  id = 10002
+  name = "New screen schema"
+  description = ""
+  screens = {
+    default = 10007
+  }
+}

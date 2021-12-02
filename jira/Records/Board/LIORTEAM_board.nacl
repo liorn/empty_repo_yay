@@ -1,0 +1,87 @@
+jira.Board LIORTEAM_board@s {
+  id = 5
+  self = "https://ori-salto-test.atlassian.net/rest/agile/1.0/board/5"
+  name = "LIORTEAM board"
+  type = "simple"
+  admins = {
+    users = [
+      {
+        self = "https://ori-salto-test.atlassian.net/rest/api/2/user?accountId=60e8b78784c9920071996842"
+        displayName = "Lior Neudorfer"
+        active = true
+        accountId = "60e8b78784c9920071996842"
+        avatarUrls = {
+          "16x16" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+          "24x24" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+          "32x32" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+          "48x48" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+        }
+      },
+    ]
+  }
+  location = {
+    projectId = 10006
+    displayName = "LiorTeamManaged (LIORTEAM)"
+    projectName = "LiorTeamManaged"
+    projectKey = "LIORTEAM"
+    projectTypeKey = "software"
+    avatarURI = "/secure/projectavatar?size=small&s=small&pid=10006&avatarId=10413"
+    name = "LiorTeamManaged (LIORTEAM)"
+  }
+  canEdit = true
+  config = [
+    {
+      id = 5
+      name = "LIORTEAM board"
+      type = "simple"
+      self = "https://ori-salto-test.atlassian.net/rest/agile/1.0/board/5/configuration"
+      location = jira.Project.instance.LiorTeamManaged
+      filter = {
+        id = "10007"
+        self = "https://ori-salto-test.atlassian.net/rest/api/2/filter/10007"
+      }
+      columnConfig = {
+        columns = [
+          {
+            name = "To Do"
+            statuses = [
+              {
+                id = "10012"
+                self = "https://ori-salto-test.atlassian.net/rest/api/2/status/10012"
+              },
+            ]
+          },
+          {
+            name = "In Progress"
+            statuses = [
+              {
+                id = "10013"
+                self = "https://ori-salto-test.atlassian.net/rest/api/2/status/10013"
+              },
+            ]
+          },
+          {
+            name = "Done"
+            statuses = [
+              {
+                id = "10014"
+                self = "https://ori-salto-test.atlassian.net/rest/api/2/status/10014"
+              },
+            ]
+          },
+        ]
+        constraintType = "none"
+      }
+      estimation = {
+        type = "field"
+        field = {
+          fieldId = "customfield_10016"
+          displayName = "Story point estimate"
+        }
+      }
+      ranking = {
+        rankCustomFieldId = 10019
+      }
+    },
+  ]
+}

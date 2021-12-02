@@ -1,0 +1,5 @@
+jira.SecurityScheme AS__Simplified_Issue_Security_Scheme@fssss {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/issuesecurityschemes/10002"
+  id = 10002
+  name = "AS: Simplified Issue Security Scheme"
+}

@@ -1,0 +1,97 @@
+jira.Project process_control_project@b {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/project/10001"
+  id = "10001"
+  key = "PCP"
+  description = ""
+  lead = {
+    self = "https://ori-salto-test.atlassian.net/rest/api/3/user?accountId=5cd027a783de300fe5d4b9b0"
+    accountId = "5cd027a783de300fe5d4b9b0"
+    accountType = "atlassian"
+    avatarUrls = {
+      "48x48" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "24x24" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "16x16" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "32x32" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+    }
+    displayName = "Ori Moisis"
+    active = true
+  }
+  issueTypes = [
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10005"
+      id = "10005"
+      description = "A small, distinct piece of work."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype"
+      name = "Task"
+      subtask = false
+      avatarId = 10318
+      hierarchyLevel = 0
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10006"
+      id = "10006"
+      description = "A small piece of work that's part of a larger task."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype"
+      name = "Sub-task"
+      subtask = true
+      avatarId = 10316
+      hierarchyLevel = -1
+    },
+  ]
+  name = "process-control-project"
+  avatarUrls = {
+    "48x48" = "https://ori-salto-test.atlassian.net/secure/projectavatar?pid=10001&avatarId=10423"
+    "24x24" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=small&s=small&pid=10001&avatarId=10423"
+    "16x16" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10001&avatarId=10423"
+    "32x32" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10001&avatarId=10423"
+  }
+  projectTypeKey = "business"
+  simplified = false
+  style = "classic"
+  isPrivate = false
+  permissions = {
+    canEdit = true
+  }
+  components = [
+    {
+      realAssigneeType = "PROJECT_LEAD"
+      realAssignee = {
+        self = "https://ori-salto-test.atlassian.net/rest/api/3/user?accountId=5cd027a783de300fe5d4b9b0"
+        accountId = "5cd027a783de300fe5d4b9b0"
+        avatarUrls = {
+          "48x48" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+          "24x24" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+          "16x16" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+          "32x32" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+        }
+        displayName = "Ori Moisis"
+        active = true
+      }
+      isAssigneeTypeValid = true
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/component/10000"
+      name = "Component one"
+      id = "10000"
+      description = "the first component"
+      projectId = 10001
+      project = "PCP"
+      assignee = {
+        self = "https://ori-salto-test.atlassian.net/rest/api/3/user?accountId=5cd027a783de300fe5d4b9b0"
+        accountId = "5cd027a783de300fe5d4b9b0"
+        avatarUrls = {
+          "48x48" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+          "24x24" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+          "16x16" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+          "32x32" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+        }
+        displayName = "Ori Moisis"
+        active = true
+      }
+      assigneeType = "PROJECT_LEAD"
+    },
+  ]
+  additionalProperties = {
+    projectKeys = [
+      "PCP",
+    ]
+  }
+}

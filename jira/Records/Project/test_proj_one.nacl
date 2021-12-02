@@ -1,0 +1,83 @@
+jira.Project test_proj_one@b {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/project/10000"
+  id = "10000"
+  key = "TPO"
+  description = ""
+  lead = {
+    self = "https://ori-salto-test.atlassian.net/rest/api/3/user?accountId=5cd027a783de300fe5d4b9b0"
+    accountId = "5cd027a783de300fe5d4b9b0"
+    accountType = "atlassian"
+    avatarUrls = {
+      "48x48" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "24x24" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "16x16" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "32x32" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+    }
+    displayName = "Ori Moisis"
+    active = true
+  }
+  issueTypes = [
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10001"
+      id = "10001"
+      description = "Tasks track small, distinct pieces of work."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype"
+      name = "Task"
+      subtask = false
+      avatarId = 10318
+      hierarchyLevel = 0
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10002"
+      id = "10002"
+      description = "Epics track collections of related bugs, stories, and tasks."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10307&avatarType=issuetype"
+      name = "Epic"
+      subtask = false
+      avatarId = 10307
+      hierarchyLevel = 1
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10003"
+      id = "10003"
+      description = "Subtasks track small pieces of work that are part of a larger task."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype"
+      name = "Subtask"
+      subtask = true
+      avatarId = 10316
+      hierarchyLevel = -1
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10004"
+      id = "10004"
+      description = "custom issue type description"
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10323&avatarType=issuetype"
+      name = "Custom issue type"
+      subtask = false
+      avatarId = 10323
+      hierarchyLevel = 0
+    },
+  ]
+  name = "test-proj-one"
+  avatarUrls = {
+    "48x48" = "https://ori-salto-test.atlassian.net/secure/projectavatar?pid=10000&avatarId=10406"
+    "24x24" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=small&s=small&pid=10000&avatarId=10406"
+    "16x16" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10000&avatarId=10406"
+    "32x32" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10000&avatarId=10406"
+  }
+  projectCategory = jira.ProjectCategory.instance.ProjCatOne
+  projectTypeKey = "software"
+  simplified = true
+  style = "next-gen"
+  isPrivate = false
+  permissions = {
+    canEdit = true
+  }
+  uuid = "03e3aa2c-2ee5-4574-ac67-32fdf8f3dc7e"
+  additionalProperties = {
+    projectKeys = [
+      "TPO",
+    ]
+    entityId = "03e3aa2c-2ee5-4574-ac67-32fdf8f3dc7e"
+  }
+}

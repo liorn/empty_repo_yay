@@ -1,0 +1,5 @@
+jira.SecurityScheme LIORTEAM__Simplified_Issue_Security_Scheme@fssss {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/issuesecurityschemes/10001"
+  id = 10001
+  name = "LIORTEAM: Simplified Issue Security Scheme"
+}

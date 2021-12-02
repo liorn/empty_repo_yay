@@ -1,0 +1,92 @@
+jira.Project LiorTeamManaged {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/project/10006"
+  id = "10006"
+  key = "LIORTEAM"
+  description = ""
+  lead = {
+    self = "https://ori-salto-test.atlassian.net/rest/api/3/user?accountId=60e8b78784c9920071996842"
+    accountId = "60e8b78784c9920071996842"
+    accountType = "atlassian"
+    avatarUrls = {
+      "48x48" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+      "24x24" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+      "16x16" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+      "32x32" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+    }
+    displayName = "Lior Neudorfer"
+    active = true
+  }
+  issueTypes = [
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10012"
+      id = "10012"
+      description = "Stories track functionality or features expressed as user goals."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10315&avatarType=issuetype"
+      name = "Story"
+      subtask = false
+      avatarId = 10315
+      hierarchyLevel = 0
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10013"
+      id = "10013"
+      description = "Tasks track small, distinct pieces of work."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype"
+      name = "Task"
+      subtask = false
+      avatarId = 10318
+      hierarchyLevel = 0
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10014"
+      id = "10014"
+      description = "Bugs track problems or errors."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10303&avatarType=issuetype"
+      name = "Bug"
+      subtask = false
+      avatarId = 10303
+      hierarchyLevel = 0
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10015"
+      id = "10015"
+      description = "Epics track collections of related bugs, stories, and tasks."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10307&avatarType=issuetype"
+      name = "Epic"
+      subtask = false
+      avatarId = 10307
+      hierarchyLevel = 1
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10016"
+      id = "10016"
+      description = "Subtasks track small pieces of work that are part of a larger task."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype"
+      name = "Subtask"
+      subtask = true
+      avatarId = 10316
+      hierarchyLevel = -1
+    },
+  ]
+  name = "LiorTeamManaged"
+  avatarUrls = {
+    "48x48" = "https://ori-salto-test.atlassian.net/secure/projectavatar?pid=10006&avatarId=10413"
+    "24x24" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=small&s=small&pid=10006&avatarId=10413"
+    "16x16" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10006&avatarId=10413"
+    "32x32" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10006&avatarId=10413"
+  }
+  projectTypeKey = "software"
+  simplified = true
+  style = "next-gen"
+  isPrivate = false
+  permissions = {
+    canEdit = true
+  }
+  uuid = "52c2d1a4-aa12-49f4-ad08-10f1f0b0d644"
+  additionalProperties = {
+    projectKeys = [
+      "LIORTEAM",
+    ]
+    entityId = "52c2d1a4-aa12-49f4-ad08-10f1f0b0d644"
+  }
+}

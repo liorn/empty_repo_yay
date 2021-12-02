@@ -1,0 +1,6 @@
+type jira.AttachmentSettings {
+  boolean enabled {
+  }
+  number uploadLimit {
+  }
+}

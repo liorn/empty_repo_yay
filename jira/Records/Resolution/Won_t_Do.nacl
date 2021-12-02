@@ -1,0 +1,6 @@
+jira.Resolution Won_t_Do@ts {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/resolution/10001"
+  id = "10001"
+  description = "This issue won't be actioned."
+  name = "Won't Do"
+}

@@ -1,0 +1,26 @@
+jira.Dashboard Custom_dashboard@s {
+  description = ""
+  id = "10001"
+  name = "Custom dashboard"
+  owner = {
+    self = "https://ori-salto-test.atlassian.net/rest/api/3/user?accountId=5cd027a783de300fe5d4b9b0"
+    displayName = "Ori Moisis"
+    active = true
+    accountId = "5cd027a783de300fe5d4b9b0"
+    avatarUrls = {
+      "16x16" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "24x24" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "32x32" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+      "48x48" = "https://secure.gravatar.com/avatar/a7c2b958d219d7af4616c748aebe475c?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FOM-6.png"
+    }
+  }
+  popularity = 1
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/dashboard/10001"
+  sharePermissions = [
+    {
+      id = 10003
+      type = "loggedin"
+    },
+  ]
+  view = "https://ori-salto-test.atlassian.net/secure/Dashboard.jspa?selectPageId=10001"
+}

@@ -1,0 +1,8 @@
+jira.ScreenScheme TPT__Scrum_Bug_Screen_Scheme@fssss {
+  id = 10004
+  name = "TPT: Scrum Bug Screen Scheme"
+  description = ""
+  screens = {
+    default = 10009
+  }
+}

@@ -1,0 +1,8 @@
+type jira.IncludedFields {
+  "List<string>" included {
+  }
+  "List<string>" actuallyIncluded {
+  }
+  "List<string>" excluded {
+  }
+}

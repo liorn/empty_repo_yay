@@ -1,0 +1,11 @@
+jira.StatusDetails Cancelled {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/10006"
+  description = ""
+  iconUrl = "https://ori-salto-test.atlassian.net/images/icons/status_generic.gif"
+  name = "Cancelled"
+  id = "10006"
+  statusCategory = jira.StatusCategory.instance.Done
+  additionalProperties = {
+    untranslatedName = "Cancelled"
+  }
+}

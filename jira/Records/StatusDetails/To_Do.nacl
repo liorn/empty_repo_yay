@@ -1,0 +1,11 @@
+jira.StatusDetails To_Do@s {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/10008"
+  description = ""
+  iconUrl = "https://ori-salto-test.atlassian.net/"
+  name = "To Do"
+  id = "10008"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  additionalProperties = {
+    untranslatedName = "To Do"
+  }
+}

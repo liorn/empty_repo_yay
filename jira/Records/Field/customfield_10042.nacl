@@ -1,0 +1,48 @@
+jira.Field customfield_10042 {
+  id = "customfield_10042"
+  name = "Σ Progress2"
+  schema = {
+    type = "array"
+    items = "option"
+    custom = "com.atlassian.jira.plugin.system.customfieldtypes:multicheckboxes"
+    customId = 10042
+  }
+  description = "aaaaa"
+  key = "customfield_10042"
+  contexts = [
+    {
+      id = "10157"
+      name = "testContext1"
+      description = "test"
+      isGlobalContext = false
+      isAnyIssueType = false
+    },
+  ]
+  contextDefaults = [
+    {
+      type = "option.multiple"
+      contextId = "10157"
+    },
+  ]
+  contextIssueTypes = [
+    {
+      contextId = "10157"
+      issueTypeId = "10000"
+    },
+    {
+      contextId = "10157"
+      issueTypeId = "10007"
+    },
+    {
+      contextId = "10157"
+      issueTypeId = "10009"
+    },
+  ]
+  contextProjects = [
+    {
+      contextId = "10157"
+      
+      projectId = "10003"
+    },
+  ]
+}

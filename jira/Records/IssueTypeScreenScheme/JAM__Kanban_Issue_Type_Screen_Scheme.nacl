@@ -1,0 +1,5 @@
+jira.IssueTypeScreenScheme JAM__Kanban_Issue_Type_Screen_Scheme@fsssss {
+  id = "10005"
+  name = "JAM: Kanban Issue Type Screen Scheme"
+  description = ""
+}

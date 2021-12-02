@@ -1,0 +1,24 @@
+jira.ApplicationRole Jira_Software@s {
+  key = "jira-software"
+  groups = [
+    "TPT-engineering",
+    "jira-software-users",
+    "atlassian-addons-admin",
+    "system-administrators",
+    "trusted-users-128baddc-c238-4857-b249-cfc84bd10c4b",
+    "site-admins",
+    "administrators",
+  ]
+  name = "Jira Software"
+  defaultGroups = [
+    "jira-software-users",
+  ]
+  selectedByDefault = false
+  defined = true
+  numberOfSeats = 10
+  remainingSeats = 1
+  userCount = 9
+  userCountDescription = "users"
+  hasUnlimitedSeats = false
+  platform = false
+}

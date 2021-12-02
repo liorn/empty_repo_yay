@@ -1,0 +1,11 @@
+jira.StatusDetails Under_Review@s {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/10003"
+  description = ""
+  iconUrl = "https://ori-salto-test.atlassian.net/images/icons/status_generic.gif"
+  name = "Under Review"
+  id = "10003"
+  statusCategory = jira.StatusCategory.instance.In_Progress@s
+  additionalProperties = {
+    untranslatedName = "Under Review"
+  }
+}

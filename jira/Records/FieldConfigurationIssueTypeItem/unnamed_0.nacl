@@ -1,0 +1,5 @@
+jira.FieldConfigurationIssueTypeItem unnamed_0 {
+  fieldConfigurationSchemeId = "10001"
+  issueTypeId = "default"
+  fieldConfigurationId = "10000"
+}

@@ -1,0 +1,5 @@
+jira.IssueTypeScreenScheme PCP__Process_Management_Issue_Type_Screen_Scheme@fssssss {
+  id = "10001"
+  name = "PCP: Process Management Issue Type Screen Scheme"
+  description = ""
+}

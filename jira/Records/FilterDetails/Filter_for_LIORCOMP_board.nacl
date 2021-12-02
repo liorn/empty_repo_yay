@@ -1,0 +1,27 @@
+jira.FilterDetails Filter_for_LIORCOMP_board@s {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/filter/10008"
+  id = "10008"
+  name = "Filter for LIORCOMP board"
+  owner = {
+    self = "https://ori-salto-test.atlassian.net/rest/api/3/user?accountId=60e8b78784c9920071996842"
+    accountId = "60e8b78784c9920071996842"
+    avatarUrls = {
+      "48x48" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+      "24x24" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+      "16x16" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+      "32x32" = "https://secure.gravatar.com/avatar/b5e40bbc55b3952e5a1a415d857af16a?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FLN-4.png"
+    }
+    displayName = "Lior Neudorfer"
+    active = true
+  }
+  jql = "project = LIORCOMP ORDER BY Rank ASC"
+  viewUrl = "https://ori-salto-test.atlassian.net/issues/?filter=10008"
+  searchUrl = "https://ori-salto-test.atlassian.net/rest/api/3/search?jql=project+%3D+LIORCOMP+ORDER+BY+Rank+ASC"
+  sharePermissions = [
+    {
+      id = 10010
+      type = "project"
+      project = jira.Project.instance.LiorCompanyManaged
+    },
+  ]
+}

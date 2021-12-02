@@ -1,0 +1,11 @@
+jira.StatusDetails Approved {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/10004"
+  description = ""
+  iconUrl = "https://ori-salto-test.atlassian.net/images/icons/status_generic.gif"
+  name = "Approved"
+  id = "10004"
+  statusCategory = jira.StatusCategory.instance.Done
+  additionalProperties = {
+    untranslatedName = "Approved"
+  }
+}

@@ -1,0 +1,9 @@
+jira.ScreenScheme PCP__Process_Management_Screen_Scheme@fssss {
+  id = 10001
+  name = "PCP: Process Management Screen Scheme"
+  description = ""
+  screens = {
+    default = 10004
+    create = 10003
+  }
+}

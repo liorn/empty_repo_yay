@@ -1,0 +1,6 @@
+jira.ProjectCategory ProjCatOne {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/projectCategory/10000"
+  id = "10000"
+  description = "first project category"
+  name = "ProjCatOne"
+}

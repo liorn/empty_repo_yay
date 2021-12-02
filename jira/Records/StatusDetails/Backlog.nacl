@@ -1,0 +1,11 @@
+jira.StatusDetails Backlog {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/10010"
+  description = ""
+  iconUrl = "https://ori-salto-test.atlassian.net/"
+  name = "Backlog"
+  id = "10010"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  additionalProperties = {
+    untranslatedName = "Backlog"
+  }
+}

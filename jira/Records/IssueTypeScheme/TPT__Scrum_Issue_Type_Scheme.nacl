@@ -1,0 +1,5 @@
+jira.IssueTypeScheme TPT__Scrum_Issue_Type_Scheme@fssss {
+  id = "10131"
+  name = "TPT: Scrum Issue Type Scheme"
+  defaultIssueTypeId = "10007"
+}

@@ -1,0 +1,8 @@
+jira.ScreenScheme JAM__Kanban_Bug_Screen_Scheme@fssss {
+  id = 10014
+  name = "JAM: Kanban Bug Screen Scheme"
+  description = ""
+  screens = {
+    default = 10019
+  }
+}

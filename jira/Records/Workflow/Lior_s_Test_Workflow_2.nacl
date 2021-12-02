@@ -1,0 +1,177 @@
+jira.Workflow Lior_s_Test_Workflow_2@tsss {
+  id = {
+    name = "Lior's Test Workflow 2"
+    entityId = "231b348e-6787-42b8-99cb-549ea8d151ff"
+  }
+  description = ""
+  transitions = [
+    {
+      id = "1"
+      name = "Create"
+      description = ""
+      to = "1"
+      type = "initial"
+      rules = {
+        validators = [
+          {
+            type = "PermissionValidator"
+            configuration = {
+              permissionKey = "CREATE_ISSUES"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "IssueCreateFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "1"
+                name = "issue_created"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "11"
+      name = "Build Broken"
+      description = ""
+      to = "401"
+      type = "global"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "21"
+      name = "LiorTestTransition"
+      description = ""
+      from = [
+        "1",
+      ]
+      to = "401"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+    {
+      id = "31"
+      name = "TransitionToShared"
+      description = ""
+      from = [
+        "10018",
+      ]
+      to = "401"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
+  ]
+  statuses = [
+    {
+      id = "1"
+      name = "Open"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10018"
+      name = "A shared status"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "401"
+      name = "Build Broken"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+  ]
+}

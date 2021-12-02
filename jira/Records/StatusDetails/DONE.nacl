@@ -1,0 +1,11 @@
+jira.StatusDetails DONE {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/10005"
+  description = ""
+  iconUrl = "https://ori-salto-test.atlassian.net/images/icons/status_generic.gif"
+  name = "DONE"
+  id = "10005"
+  statusCategory = jira.StatusCategory.instance.Done
+  additionalProperties = {
+    untranslatedName = "DONE"
+  }
+}

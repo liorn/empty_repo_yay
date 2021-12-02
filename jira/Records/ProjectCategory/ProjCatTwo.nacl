@@ -1,0 +1,6 @@
+jira.ProjectCategory ProjCatTwo {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/projectCategory/10001"
+  id = "10001"
+  description = "second project category"
+  name = "ProjCatTwo"
+}

@@ -1,0 +1,11 @@
+jira.StatusDetails A_shared_status@s {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/status/10018"
+  description = "A new status created by Lior"
+  iconUrl = "https://ori-salto-test.atlassian.net/images/icons/statuses/generic.png"
+  name = "A shared status"
+  id = "10018"
+  statusCategory = jira.StatusCategory.instance.To_Do@s
+  additionalProperties = {
+    untranslatedName = "A shared status"
+  }
+}

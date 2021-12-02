@@ -1,0 +1,8 @@
+jira.ScreenScheme TP3__Software_Development_Bug_Screen_Scheme@fsssss {
+  id = 10006
+  name = "TP3: Software Development Bug Screen Scheme"
+  description = ""
+  screens = {
+    default = 10011
+  }
+}

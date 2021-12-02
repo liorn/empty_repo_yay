@@ -1,0 +1,5 @@
+jira.IssueTypeScreenScheme TPT__Scrum_Issue_Type_Screen_Scheme@fsssss {
+  id = "10002"
+  name = "TPT: Scrum Issue Type Screen Scheme"
+  description = ""
+}

@@ -1,0 +1,5 @@
+jira.IssueTypeScheme TP3__Software_Development_Issue_Type_Scheme@fsssss {
+  id = "10135"
+  name = "TP3: Software Development Issue Type Scheme"
+  defaultIssueTypeId = "10008"
+}

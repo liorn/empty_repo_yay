@@ -1,0 +1,8 @@
+jira.ScreenScheme JAM__Kanban_Default_Screen_Scheme@fssss {
+  id = 10013
+  name = "JAM: Kanban Default Screen Scheme"
+  description = ""
+  screens = {
+    default = 10018
+  }
+}

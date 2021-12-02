@@ -1,0 +1,5 @@
+jira.IssueTypeScheme New_issue_type_scheme_for_project_test_proj_three@ssssssbb {
+  id = "10136"
+  name = "New issue type scheme for project test-proj-three"
+  defaultIssueTypeId = "10005"
+}

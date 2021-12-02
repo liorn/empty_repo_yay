@@ -1,0 +1,72 @@
+jira.Project AlonProject {
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/project/10008"
+  id = "10008"
+  key = "AS"
+  description = "Alon's project"
+  lead = {
+    self = "https://ori-salto-test.atlassian.net/rest/api/3/user?accountId=5fa91999b2633d0076583a61"
+    accountId = "5fa91999b2633d0076583a61"
+    accountType = "atlassian"
+    avatarUrls = {
+      "48x48" = "https://secure.gravatar.com/avatar/90ccd84f150f4fab9ea92e7e7a0ea06e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+      "24x24" = "https://secure.gravatar.com/avatar/90ccd84f150f4fab9ea92e7e7a0ea06e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+      "16x16" = "https://secure.gravatar.com/avatar/90ccd84f150f4fab9ea92e7e7a0ea06e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+      "32x32" = "https://secure.gravatar.com/avatar/90ccd84f150f4fab9ea92e7e7a0ea06e?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAS-0.png"
+    }
+    displayName = "Alon Stern"
+    active = true
+  }
+  issueTypes = [
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10017"
+      id = "10017"
+      description = "Tasks track small, distinct pieces of work."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10318&avatarType=issuetype"
+      name = "Task"
+      subtask = false
+      avatarId = 10318
+      hierarchyLevel = 0
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10018"
+      id = "10018"
+      description = "Epics track collections of related bugs, stories, and tasks."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10307&avatarType=issuetype"
+      name = "Epic"
+      subtask = false
+      avatarId = 10307
+      hierarchyLevel = 1
+    },
+    {
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/issuetype/10019"
+      id = "10019"
+      description = "Subtasks track small pieces of work that are part of a larger task."
+      iconUrl = "https://ori-salto-test.atlassian.net/secure/viewavatar?size=medium&avatarId=10316&avatarType=issuetype"
+      name = "Subtask"
+      subtask = true
+      avatarId = 10316
+      hierarchyLevel = -1
+    },
+  ]
+  name = "AlonProject"
+  avatarUrls = {
+    "48x48" = "https://ori-salto-test.atlassian.net/secure/projectavatar?pid=10008&avatarId=10401"
+    "24x24" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=small&s=small&pid=10008&avatarId=10401"
+    "16x16" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=xsmall&s=xsmall&pid=10008&avatarId=10401"
+    "32x32" = "https://ori-salto-test.atlassian.net/secure/projectavatar?size=medium&s=medium&pid=10008&avatarId=10401"
+  }
+  projectTypeKey = "software"
+  simplified = true
+  style = "next-gen"
+  isPrivate = false
+  permissions = {
+    canEdit = true
+  }
+  uuid = "ee4f7577-08a3-4e83-ac56-004fb227b6eb"
+  additionalProperties = {
+    projectKeys = [
+      "AS",
+    ]
+    entityId = "ee4f7577-08a3-4e83-ac56-004fb227b6eb"
+  }
+}

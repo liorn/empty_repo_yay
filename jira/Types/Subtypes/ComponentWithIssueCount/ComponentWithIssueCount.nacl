@@ -1,0 +1,28 @@
+type jira.ComponentWithIssueCount {
+  number issueCount {
+  }
+  string description {
+  }
+  string project {
+  }
+  number projectId {
+  }
+  jira.User assignee {
+  }
+  string self {
+  }
+  jira.User realAssignee {
+  }
+  boolean isAssigneeTypeValid {
+  }
+  string realAssigneeType {
+  }
+  string assigneeType {
+  }
+  jira.User lead {
+  }
+  string name {
+  }
+  string id {
+  }
+}

@@ -1,0 +1,5 @@
+jira.FieldConfigurationScheme Custom_field_config@s {
+  id = "10001"
+  name = "Custom field config"
+  description = "desc!"
+}

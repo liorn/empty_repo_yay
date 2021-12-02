@@ -1,0 +1,5 @@
+jira.IssueTypeScreenSchemeItem unnamed_2 {
+  issueTypeScreenSchemeId = "10002"
+  issueTypeId = "default"
+  screenSchemeId = "10003"
+}

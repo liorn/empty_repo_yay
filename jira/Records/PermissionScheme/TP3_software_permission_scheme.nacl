@@ -1,0 +1,680 @@
+jira.PermissionScheme TP3_software_permission_scheme@s {
+  id = 10003
+  self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003"
+  name = "TP3 software permission scheme"
+  description = "The permission scheme for Jira Software Free. In Free, any registered user can access and administer this project."
+  permissions = [
+    {
+      id = 10660
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10660"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "VIEW_AGGREGATED_DATA"
+    },
+    {
+      id = 10656
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10656"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "SET_ISSUE_SECURITY"
+    },
+    {
+      id = 10623
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10623"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "WORK_ON_ISSUES"
+    },
+    {
+      id = 10622
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10622"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "VIEW_VOTERS_AND_WATCHERS"
+    },
+    {
+      id = 10621
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10621"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "VIEW_READONLY_WORKFLOW"
+    },
+    {
+      id = 10620
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10620"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "VIEW_DEV_TOOLS"
+    },
+    {
+      id = 10619
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10619"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "TRANSITION_ISSUES"
+    },
+    {
+      id = 10618
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10618"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "SCHEDULE_ISSUES"
+    },
+    {
+      id = 10617
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10617"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "RESOLVE_ISSUES"
+    },
+    {
+      id = 10616
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10616"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "MOVE_ISSUES"
+    },
+    {
+      id = 10615
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10615"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "MODIFY_REPORTER"
+    },
+    {
+      id = 10614
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10614"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "MANAGE_WATCHERS"
+    },
+    {
+      id = 10613
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10613"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "MANAGE_SPRINTS_PERMISSION"
+    },
+    {
+      id = 10612
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10612"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "LINK_ISSUES"
+    },
+    {
+      id = 10611
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10611"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "EDIT_OWN_WORKLOGS"
+    },
+    {
+      id = 10610
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10610"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "EDIT_OWN_COMMENTS"
+    },
+    {
+      id = 10609
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10609"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "EDIT_ISSUES"
+    },
+    {
+      id = 10608
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10608"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "EDIT_ALL_WORKLOGS"
+    },
+    {
+      id = 10607
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10607"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "EDIT_ALL_COMMENTS"
+    },
+    {
+      id = 10606
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10606"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "DELETE_OWN_WORKLOGS"
+    },
+    {
+      id = 10605
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10605"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "DELETE_OWN_COMMENTS"
+    },
+    {
+      id = 10604
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10604"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "DELETE_OWN_ATTACHMENTS"
+    },
+    {
+      id = 10603
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10603"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "DELETE_ISSUES"
+    },
+    {
+      id = 10602
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10602"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "DELETE_ALL_WORKLOGS"
+    },
+    {
+      id = 10601
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10601"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "DELETE_ALL_COMMENTS"
+    },
+    {
+      id = 10600
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10600"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "DELETE_ALL_ATTACHMENTS"
+    },
+    {
+      id = 10599
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10599"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "CREATE_ISSUES"
+    },
+    {
+      id = 10598
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10598"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "CREATE_ATTACHMENTS"
+    },
+    {
+      id = 10597
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10597"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "CLOSE_ISSUES"
+    },
+    {
+      id = 10596
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10596"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "BROWSE_PROJECTS"
+    },
+    {
+      id = 10595
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10595"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "ASSIGN_ISSUES"
+    },
+    {
+      id = 10594
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10594"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "ASSIGNABLE_USER"
+    },
+    {
+      id = 10593
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10593"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "ADMINISTER_PROJECTS"
+    },
+    {
+      id = 10592
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10592"
+      holder = {
+        type = "projectRole"
+        parameter = "10003"
+        additionalProperties = {
+          projectRole = jira.ProjectRole.instance.atlassian_addons_project_access@b
+        }
+      }
+      permission = "ADD_COMMENTS"
+    },
+    {
+      id = 10664
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10664"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "VIEW_AGGREGATED_DATA"
+    },
+    {
+      id = 10655
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10655"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "ASSIGN_ISSUES"
+    },
+    {
+      id = 10654
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10654"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "WORK_ON_ISSUES"
+    },
+    {
+      id = 10653
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10653"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "EDIT_OWN_WORKLOGS"
+    },
+    {
+      id = 10652
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10652"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "EDIT_ALL_WORKLOGS"
+    },
+    {
+      id = 10651
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10651"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "DELETE_OWN_WORKLOGS"
+    },
+    {
+      id = 10650
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10650"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "DELETE_ALL_WORKLOGS"
+    },
+    {
+      id = 10649
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10649"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "DELETE_OWN_ATTACHMENTS"
+    },
+    {
+      id = 10648
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10648"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "DELETE_ALL_ATTACHMENTS"
+    },
+    {
+      id = 10647
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10647"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "CREATE_ATTACHMENTS"
+    },
+    {
+      id = 10646
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10646"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "EDIT_OWN_COMMENTS"
+    },
+    {
+      id = 10645
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10645"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "EDIT_ALL_COMMENTS"
+    },
+    {
+      id = 10644
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10644"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "DELETE_OWN_COMMENTS"
+    },
+    {
+      id = 10643
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10643"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "DELETE_ALL_COMMENTS"
+    },
+    {
+      id = 10642
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10642"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "ADD_COMMENTS"
+    },
+    {
+      id = 10641
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10641"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "VIEW_VOTERS_AND_WATCHERS"
+    },
+    {
+      id = 10640
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10640"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "MANAGE_WATCHERS"
+    },
+    {
+      id = 10639
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10639"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "TRANSITION_ISSUES"
+    },
+    {
+      id = 10638
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10638"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "SCHEDULE_ISSUES"
+    },
+    {
+      id = 10637
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10637"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "RESOLVE_ISSUES"
+    },
+    {
+      id = 10636
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10636"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "MOVE_ISSUES"
+    },
+    {
+      id = 10635
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10635"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "MODIFY_REPORTER"
+    },
+    {
+      id = 10634
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10634"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "LINK_ISSUES"
+    },
+    {
+      id = 10633
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10633"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "EDIT_ISSUES"
+    },
+    {
+      id = 10632
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10632"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "DELETE_ISSUES"
+    },
+    {
+      id = 10631
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10631"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "CREATE_ISSUES"
+    },
+    {
+      id = 10630
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10630"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "CLOSE_ISSUES"
+    },
+    {
+      id = 10629
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10629"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "ASSIGNABLE_USER"
+    },
+    {
+      id = 10628
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10628"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "VIEW_READONLY_WORKFLOW"
+    },
+    {
+      id = 10627
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10627"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "VIEW_DEV_TOOLS"
+    },
+    {
+      id = 10626
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10626"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "MANAGE_SPRINTS_PERMISSION"
+    },
+    {
+      id = 10625
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10625"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "BROWSE_PROJECTS"
+    },
+    {
+      id = 10624
+      self = "https://ori-salto-test.atlassian.net/rest/api/3/permissionscheme/10003/permission/10624"
+      holder = {
+        type = "applicationRole"
+      }
+      permission = "ADMINISTER_PROJECTS"
+    },
+  ]
+}
