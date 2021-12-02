@@ -81,29 +81,6 @@ jira.Workflow Lior_s_Test_Workflow@tss {
       to = "401"
       type = "directed"
       rules = {
-        postFunctions = [
-          {
-            type = "UpdateIssueStatusFunction"
-          },
-          {
-            type = "CreateCommentFunction"
-          },
-          {
-            type = "GenerateChangeHistoryFunction"
-          },
-          {
-            type = "IssueReindexFunction"
-          },
-          {
-            type = "FireIssueEventFunction"
-            configuration = {
-              event = {
-                id = "13"
-                name = "issue_generic"
-              }
-            }
-          },
-        ]
         validators = [
           {
             type = "FieldRequiredValidator"
@@ -127,6 +104,29 @@ jira.Workflow Lior_s_Test_Workflow@tss {
             configuration = {
               value = "{\"uuid\":\"8e4ba219-4715-495a-b854-203ba8ca2af5\",\"enabled\":true,\"description\":\"Another ScriptRunner validator\",\"expression\":\"!config['enabled'] ? true : (issue.getResolution() == \\\"Fixed\\\")\",\"errorMessage\":\"A ScriptRunner Script Validator is preventing this transition, please contact your Jira admin for more information.\"}"
               id = "b3a1350c-4b2a-4500-b725-08b30179dfad"
+            }
+          },
+        ]
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
             }
           },
         ]
@@ -202,6 +202,41 @@ jira.Workflow Lior_s_Test_Workflow@tss {
         ]
       }
     },
+    {
+      id = "51"
+      name = "BackLogToSharedStatus"
+      description = ""
+      from = [
+        "10010",
+      ]
+      to = "10018"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
   ]
   statuses = [
     {
@@ -217,6 +252,16 @@ jira.Workflow Lior_s_Test_Workflow@tss {
     {
       id = "10004"
       name = "Approved"
+      properties = {
+        additionalProperties = {
+          jira.issue.editable = "true"
+          issueEditable = true
+        }
+      }
+    },
+    {
+      id = "10010"
+      name = "Backlog"
       properties = {
         additionalProperties = {
           jira.issue.editable = "true"
