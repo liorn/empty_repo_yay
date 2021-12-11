@@ -1,7 +1,7 @@
-jira.Workflow Lior_s_Test_Workflow@tss {
+jira.Workflow Copy_of_Lior_s_Test_Workflow@sstss {
   id = {
-    name = "Lior's Test Workflow"
-    entityId = "a006be9e-c7ec-478b-8b6e-d51d385a4e92"
+    name = "Copy of Lior's Test Workflow"
+    entityId = "0a73494a-a934-4f6e-bd1b-cbbdd16e332f"
   }
   description = ""
   transitions = [
@@ -210,41 +210,6 @@ jira.Workflow Lior_s_Test_Workflow@tss {
         "10010",
       ]
       to = "10018"
-      type = "directed"
-      rules = {
-        postFunctions = [
-          {
-            type = "UpdateIssueStatusFunction"
-          },
-          {
-            type = "CreateCommentFunction"
-          },
-          {
-            type = "GenerateChangeHistoryFunction"
-          },
-          {
-            type = "IssueReindexFunction"
-          },
-          {
-            type = "FireIssueEventFunction"
-            configuration = {
-              event = {
-                id = "13"
-                name = "issue_generic"
-              }
-            }
-          },
-        ]
-      }
-    },
-    {
-      id = "61"
-      name = "Wow"
-      description = ""
-      from = [
-        "10010",
-      ]
-      to = "10004"
       type = "directed"
       rules = {
         postFunctions = [
