@@ -272,6 +272,41 @@ jira.Workflow Lior_s_Test_Workflow@tss {
         ]
       }
     },
+    {
+      id = "71"
+      name = "Hello Yuri"
+      description = ""
+      from = [
+        "10004",
+      ]
+      to = "401"
+      type = "directed"
+      rules = {
+        postFunctions = [
+          {
+            type = "UpdateIssueStatusFunction"
+          },
+          {
+            type = "CreateCommentFunction"
+          },
+          {
+            type = "GenerateChangeHistoryFunction"
+          },
+          {
+            type = "IssueReindexFunction"
+          },
+          {
+            type = "FireIssueEventFunction"
+            configuration = {
+              event = {
+                id = "13"
+                name = "issue_generic"
+              }
+            }
+          },
+        ]
+      }
+    },
   ]
   statuses = [
     {
