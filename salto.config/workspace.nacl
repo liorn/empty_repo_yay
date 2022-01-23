@@ -1,0 +1,5 @@
+workspace {
+  uid = "b97a9382-22e3-48c5-ab97-c0d4c348a49f"
+  name = "DeployJiraTestWS"
+  staleStateThresholdMinutes = undefined
+}
